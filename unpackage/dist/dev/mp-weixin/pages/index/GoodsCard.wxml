@@ -1,0 +1,1 @@
+<view class="goods-card data-v-f9f5852e"><image class="goods-img data-v-f9f5852e" src="{{a}}" mode="aspectFill"></image><view class="goods-title data-v-f9f5852e">{{b}}</view><view class="goods-info data-v-f9f5852e"><text class="price data-v-f9f5852e">¥{{c}}</text><view class="extra data-v-f9f5852e">{{d}}</view></view></view>

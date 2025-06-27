@@ -1,0 +1,1 @@
+<navigator url="{{e}}" class="goods-card data-v-bc56e939"><image class="goods-img data-v-bc56e939" src="{{a}}" mode="aspectFill"></image><view class="goods-title data-v-bc56e939">{{b}}</view><view class="goods-info data-v-bc56e939"><text class="price data-v-bc56e939">¥{{c}}</text><view class="extra data-v-bc56e939">{{d}}</view></view></navigator>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "集换",
+  "usingComponents": {
+    "goods-card": "./GoodsCard"
+  }
+}

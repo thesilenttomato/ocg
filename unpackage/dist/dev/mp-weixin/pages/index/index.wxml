@@ -1,0 +1,1 @@
+<view class="content data-v-1cf27b2a"><view class="goods-list data-v-1cf27b2a"><goods-card wx:for="{{a}}" wx:for-item="item" wx:key="a" class="data-v-1cf27b2a" u-i="{{item.b}}" bind:__l="__l" u-p="{{item.c}}"/></view></view>

@@ -23,9 +23,50 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+.header-buttons.data-v-1cf27b2a {
+  padding: 20rpx;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+}
+.add-button.data-v-1cf27b2a {
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 10rpx;
+  padding: 10rpx 20rpx;
+  font-size: 28rpx;
+}
+.search-box.data-v-1cf27b2a {
+  padding: 20rpx 30rpx;
+  background-color: #ffffff;
+}
+.search-input.data-v-1cf27b2a {
+  width: 90%;
+  height: 70rpx;
+  background-color: #f5f5f5;
+  border-radius: 35rpx;
+  padding: 0 30rpx;
+  font-size: 28rpx;
+  color: #333;
+}
 .content.data-v-1cf27b2a {
   padding: 16rpx;
   background-color: #f5f5f5;
+}
+.BigTitle.data-v-1cf27b2a {
+  font-size: 60rpx;
+  font-weight: bold;
+  color: #333;
+  margin-left: 10px;
+  text-align: left;
+  line-height: 64rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .goods-list.data-v-1cf27b2a {
   display: flex;

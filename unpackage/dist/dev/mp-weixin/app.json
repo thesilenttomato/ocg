@@ -1,9 +1,17 @@
 {
   "pages": [
+    "pages/Load/Load",
     "pages/index/index",
     "pages/message/message",
+    "pages/message/myMessage",
+    "pages/card/myPublish",
     "pages/personal/personal",
-    "pages/GoodsDetail/GoodsDetail"
+    "pages/CollectedGoodsCard/CollectedGoodsCard",
+    "pages/Search/Search",
+    "pages/register/register",
+    "pages/card/publish",
+    "pages/GoodsDetail/GoodsDetail",
+    "pages/Report/Report"
   ],
   "tabBar": {
     "color": "#999999",
@@ -13,20 +21,20 @@
       {
         "pagePath": "pages/index/index",
         "text": "集换",
-        "iconPath": "static/tabbar/logo.png",
-        "selectedIconPath": "static/tabbar/logo.png"
+        "iconPath": "/static/tabbar/homeW.png",
+        "selectedIconPath": "static/tabbar/homeB.png"
       },
       {
         "pagePath": "pages/message/message",
         "text": "消息",
-        "iconPath": "static/tabbar/logo.png",
-        "selectedIconPath": "static/tabbar/logo.png"
+        "iconPath": "/static/tabbar/newsW.png",
+        "selectedIconPath": "static/tabbar/newsB.png"
       },
       {
         "pagePath": "pages/personal/personal",
         "text": "个人",
-        "iconPath": "static/tabbar/logo.png",
-        "selectedIconPath": "static/tabbar/logo.png"
+        "iconPath": "/static/tabbar/myW.png",
+        "selectedIconPath": "static/tabbar/myB.png"
       }
     ]
   },

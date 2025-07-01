@@ -1,0 +1,15 @@
+{
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/CollectedGoodsCard/CollectedGoodsCard",
+          "pathName": "pages/CollectedGoodsCard/CollectedGoodsCard",
+          "query": "",
+          "scene": null,
+          "launchMode": "default"
+        }
+      ]
+    }
+  }
+}

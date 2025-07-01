@@ -1,0 +1,89 @@
+
+.publish-container.data-v-e16ddaf2 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* 头部样式 */
+.header.data-v-e16ddaf2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 30rpx;
+  background-color: #fff;
+  border-bottom: 1rpx solid #eee;
+}
+.title.data-v-e16ddaf2 {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.cancel-btn.data-v-e16ddaf2 {
+  font-size: 30rpx;
+  color: #666;
+}
+
+/* 表单容器 */
+.form-container.data-v-e16ddaf2 {
+  flex: 1;
+  padding: 20rpx;
+}
+.form-section.data-v-e16ddaf2 {
+  background-color: #fff;
+  border-radius: 16rpx;
+  padding: 30rpx;
+  margin-bottom: 20rpx;
+}
+.section-title.data-v-e16ddaf2 {
+  display: block;
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 30rpx;
+  color: #333;
+}
+
+/* 表单项目 */
+.form-item.data-v-e16ddaf2 {
+  display: flex;
+  align-items: center;
+  padding: 25rpx 0;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.label.data-v-e16ddaf2 {
+  width: 180rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+.input.data-v-e16ddaf2 {
+  flex: 1;
+  font-size: 28rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.price-input.data-v-e16ddaf2 {
+  text-align: right;
+  padding-right: 40rpx;
+}
+.currency.data-v-e16ddaf2 {
+  position: absolute;
+  right: 30rpx;
+  font-size: 28rpx;
+}
+
+/* 底部操作栏 */
+.footer.data-v-e16ddaf2 {
+  display: flex;
+  padding: 20rpx;
+  background-color: #fff;
+  border-top: 1rpx solid #eee;
+}
+.publish-btn.data-v-e16ddaf2 {
+  flex: 1;
+  background-color: #ff6b81;
+  color: #fff;
+  border-radius: 50rpx;
+  font-size: 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}

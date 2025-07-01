@@ -1,0 +1,128 @@
+
+.personal-container.data-v-6ae23533 {
+  padding: 20rpx;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+.user-info-section.data-v-6ae23533 {
+  display: flex;
+  justify-content: center;
+  padding: 30rpx;
+  background-color: #fff;
+  border-radius: 16rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.05);
+}
+.user-detail.data-v-6ae23533 {
+  width: 100%;
+}
+.username.data-v-6ae23533 {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 15rpx;
+  text-align: center;
+}
+.username.data-v-6ae23533:empty {
+  display: none;
+}
+.user-stats.data-v-6ae23533 {
+  display: flex;
+}
+.stat-item.data-v-6ae23533 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.stat-value.data-v-6ae23533 {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #ff6b81;
+}
+.stat-label.data-v-6ae23533 {
+  font-size: 24rpx;
+  color: #999;
+}
+.mini-badge.data-v-6ae23533 {
+  position: absolute;
+  top: -5rpx;
+  right: 20rpx;
+  width: 16rpx;
+  height: 16rpx;
+  background-color: #ff4757;
+  border-radius: 50%;
+}
+.main-functions.data-v-6ae23533 {
+  margin-bottom: 20rpx;
+}
+.function-card.data-v-6ae23533 {
+  background-color: #fff;
+  border-radius: 16rpx;
+  padding: 25rpx;
+  margin-bottom: 20rpx;
+}
+.function-header.data-v-6ae23533 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15rpx;
+}
+.function-icon.data-v-6ae23533 {
+  font-size: 40rpx;
+  margin-right: 15rpx;
+}
+.function-title.data-v-6ae23533 {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.function-desc.data-v-6ae23533 {
+  display: block;
+  font-size: 24rpx;
+  color: #999;
+  margin-bottom: 20rpx;
+}
+.function-footer.data-v-6ae23533 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 26rpx;
+  color: #ff6b81;
+}
+.settings-section.data-v-6ae23533 {
+  background-color: #fff;
+  border-radius: 16rpx;
+  padding: 0 20rpx;
+}
+.section-title.data-v-6ae23533 {
+  font-size: 26rpx;
+  color: #999;
+  padding: 25rpx 0 15rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.setting-item.data-v-6ae23533 {
+  display: flex;
+  align-items: center;
+  padding: 25rpx 0;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.setting-icon.data-v-6ae23533 {
+  font-size: 36rpx;
+  margin-right: 20rpx;
+}
+.setting-text.data-v-6ae23533 {
+  flex: 1;
+  font-size: 28rpx;
+}
+.setting-arrow.data-v-6ae23533 {
+  font-size: 40rpx;
+  color: #999;
+}
+.logout-btn.data-v-6ae23533 {
+  margin: 30rpx 0;
+  background-color: #ff4757;
+  color: #fff;
+  border-radius: 50rpx;
+  font-size: 28rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}

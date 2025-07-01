@@ -1,5 +1,12 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [ 
+		{
+			"path" : "pages/Load/Load",
+			"style" : 
+			{
+				"navigationBarTitleText" : "登录"
+			}
+		},
 		{
 			"path": "pages/index/index",
 			"style": {
@@ -14,6 +21,17 @@
 			}
 		},
 		{
+			"path" : "pages/message/myMessage",
+			"style" : 
+			{
+				"navigationBarTitleText" : "消息中心"
+			}
+		},
+		{
+		      "path": "pages/card/myPublish",
+		      "style": { "navigationBarTitleText": "我的发布" }
+		},
+		{
 			"path" : "pages/personal/personal",
 			"style" : 
 			{
@@ -21,12 +39,45 @@
 			}
 		},
 		{
+			"path" : "pages/CollectedGoodsCard/CollectedGoodsCard",
+			"style" : 
+			{
+				"navigationBarTitleText" : "我的收藏"
+			}
+		},
+		{
+			"path" : "pages/Search/Search",
+			"style" : 
+			{
+				"navigationBarTitleText" : "搜索"
+			}
+		},
+		{
+			"path" : "pages/register/register",
+			"style" : 
+			{
+				"navigationBarTitleText" : "注册"
+			}
+		},
+		{
+		      "path": "pages/card/publish",
+		      "style": { "navigationBarTitleText": "发布卡牌" }
+		    },
+		{
 			"path" : "pages/GoodsDetail/GoodsDetail",
 			"style" : 
 			{
 				"navigationBarTitleText" : "详情"
 			}
+		},
+		{
+			"path" : "pages/Report/Report",
+			"style" : 
+			{
+				"navigationBarTitleText" : "举报"
+			}
 		}
+		
 	],
 	"tabBar": {
 	    "color": "#999999",
@@ -36,20 +87,20 @@
 	      {
 	        "pagePath": "pages/index/index",
 	        "text": "集换",
-	        "iconPath": "static/tabbar/logo.png",
-	        "selectedIconPath": "static/tabbar/logo.png"
+	        "iconPath": "/static/tabbar/homeW.png",
+	        "selectedIconPath": "static/tabbar/homeB.png"
 	      },
 	      {
 	        "pagePath": "pages/message/message",
 	        "text": "消息",
-	        "iconPath": "static/tabbar/logo.png",
-	        "selectedIconPath": "static/tabbar/logo.png"
+	        "iconPath": "/static/tabbar/newsW.png",
+	        "selectedIconPath": "static/tabbar/newsB.png"
 	      },
 	      {
 	        "pagePath": "pages/personal/personal",
 	        "text": "个人",
-	        "iconPath": "static/tabbar/logo.png",
-	        "selectedIconPath": "static/tabbar/logo.png"
+	        "iconPath": "/static/tabbar/myW.png",
+	        "selectedIconPath": "static/tabbar/myB.png"
 	      }
 	    ]
 	  }

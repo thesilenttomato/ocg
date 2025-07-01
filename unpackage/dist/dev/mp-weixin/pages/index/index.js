@@ -7,54 +7,52 @@ const _sfc_main = {
   },
   data() {
     return {
-      // 模拟商品列表数据，字段需和组件 props 匹配
-      goodsList: [
-        {
-          image: "/static/logo.png",
-          // 图片路径，可替换为实际地址
-          title: "梦魇曲 崩界之伊布丽丝",
-          price: 5,
-          score: 10,
-          code: "LVP3-JP083",
-          count: 1
-        },
-        {
-          image: "/static/logo.png",
-          // 图片路径，可替换为实际地址
-          title: "梦魇曲 崩界之伊布丽丝",
-          price: 5,
-          score: 10,
-          code: "LVP3-JP083",
-          count: 1
-        },
-        {
-          image: "/static/logo.png",
-          // 图片路径，可替换为实际地址
-          title: "梦魇曲 崩界之伊布丽丝",
-          price: 5,
-          score: 10,
-          code: "LVP3-JP083",
-          count: 1
-        },
-        {
-          image: "/static/logo.png",
-          title: "三战之号",
-          price: 220,
-          score: 7.7,
-          code: "QCAC-JP...",
-          count: 2
-        },
-        {
-          image: "/static/logo.png",
-          title: "深渊的暗杀者",
-          price: 0.8,
-          score: "-",
-          code: "SD13-JP012 N",
-          count: 5
-        }
-        // 可继续扩展更多商品数据
-      ]
+      searchText: "",
+      goodsList: []
     };
+  },
+  onShow() {
+    this.getTopCards();
+  },
+  methods: {
+    logCardId(id) {
+      common_vendor.index.__f__("log", "at pages/index/index.vue:49", "点击的卡片ID:", id, "类型:", typeof id);
+    },
+    // 搜索页面的方法
+    goToSearch() {
+      if (this.searchText.trim()) {
+        common_vendor.index.navigateTo({
+          url: `/pages/Search/Search?keyword=${encodeURIComponent(this.searchText.trim())}&isFromCollect=0`
+        });
+      }
+    },
+    //获取热门卡片数据
+    getTopCards() {
+      common_vendor.index.request({
+        url: "http://127.0.0.1:8080/cards/get/top",
+        method: "GET",
+        success: (res) => {
+          if (res.data.code === 0) {
+            this.goodsList = res.data.data.map((item) => ({
+              ...item,
+              id: BigInt(item.id)
+            }));
+          } else {
+            common_vendor.index.showToast({
+              title: "获取数据失败",
+              icon: "none"
+            });
+          }
+        },
+        fail: (err) => {
+          common_vendor.index.__f__("error", "at pages/index/index.vue:80", "请求失败:", err);
+          common_vendor.index.showToast({
+            title: "网络请求失败",
+            icon: "none"
+          });
+        }
+      });
+    }
   }
 };
 if (!Array) {
@@ -63,7 +61,10 @@ if (!Array) {
 }
 function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
   return {
-    a: common_vendor.f($data.goodsList, (item, index, i0) => {
+    a: common_vendor.o((...args) => $options.goToSearch && $options.goToSearch(...args)),
+    b: $data.searchText,
+    c: common_vendor.o(($event) => $data.searchText = $event.detail.value),
+    d: common_vendor.f($data.goodsList.slice(0, 9), (item, index, i0) => {
       return {
         a: index,
         b: "1cf27b2a-0-" + i0,

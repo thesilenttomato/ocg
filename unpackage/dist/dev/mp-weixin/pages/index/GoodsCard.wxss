@@ -25,7 +25,6 @@
 /* 文章场景相关 */
 .goods-card.data-v-f9f5852e {
   width: 220rpx;
-  /* 卡片宽度，可根据需求调整 */
   margin: 10rpx;
   display: flex;
   flex-direction: column;
@@ -38,7 +37,6 @@
 .goods-card .goods-img.data-v-f9f5852e {
   width: 100%;
   height: 240rpx;
-  /* 保持图片比例，可按需调整 */
 }
 .goods-card .goods-title.data-v-f9f5852e {
   font-size: 32rpx;

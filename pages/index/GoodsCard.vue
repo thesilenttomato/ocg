@@ -1,19 +1,18 @@
 <template>
   <!-- 商品卡片组件，接收单个商品数据 -->
-  <view class="goods-card">
+  <view class="goods-card"@click="navigateToDetail">
     <!-- 商品图片 -->
     <image 
       class="goods-img" 
-      :src="goods.image" 
+      :src="goods.cardGraph" 
       mode="aspectFill"
     ></image>
     <!-- 商品标题 -->
-    <view class="goods-title">{{ goods.title }}</view>
-    <!-- 价格 + 额外信息（集换分、编号等，可按需扩展） -->
+    <view class="goods-title">{{ goods.name }}</view>
     <view class="goods-info">
       <text class="price">¥{{ goods.price }}</text>
       <view class="extra">
-       {{ goods.code }}
+       {{ goods.cardNumber }}
       </view>
     </view>
   </view>
@@ -27,7 +26,15 @@ export default {
     goods: {
       type: Object,
       required: true,
-      default: () => ({})
+    }
+  },  
+  methods: {
+    navigateToDetail() {
+      // 跳转到详情页，携带商品ID
+      uni.navigateTo({
+        url: `/pages/GoodsDetail/GoodsDetail?id=${this.goods.id}` 
+      });
+	  console.log("携带的id为："+this.goods.id)
     }
   }
 };
@@ -35,7 +42,7 @@ export default {
 
 <style lang="scss" scoped>
 .goods-card {
-  width: 220rpx; /* 卡片宽度，可根据需求调整 */
+  width: 220rpx; 
   margin: 10rpx;
   display: flex;
   flex-direction: column;
@@ -44,20 +51,19 @@ export default {
   border-radius: 12rpx;
   box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.1);
   overflow: hidden;
-
   .goods-img {
     width: 100%;
-    height: 240rpx; /* 保持图片比例，可按需调整 */
+    height: 240rpx; 
   }
 
 .goods-title {
-  font-size: 32rpx;           // 增大字体（原为28rpx）
-  font-weight: bold;          // 加粗字体
+  font-size: 32rpx;           
+  font-weight: bold;          
   color: #333;
   margin: 12rpx 0 8rpx;
   text-align: center;
-  line-height: 44rpx;         // 适当增加行高（原为40rpx）
-  height: 88rpx;              // 保持两行高度（44rpx * 2）
+  line-height: 44rpx;         
+  height: 88rpx;              
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
